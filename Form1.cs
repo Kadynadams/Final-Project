@@ -4,15 +4,28 @@ namespace Final_Project
     {
         Pen drawPen = new Pen(Color.Black,4);
         Image adventureguys = Properties.Resources.adventure_phoyo;
-        //initial location of my hero (Han Solo)
-        Rectangle hero = new Rectangle(150, 100, 70,70);
+        //initial location of my hero Adventure character)
+        Rectangle hero = new Rectangle(0,225, 70,50);
         //make booleans for movement
         Boolean wPressed = false;
         Boolean sPressed = false;
         Boolean aPressed = false;
         Boolean dPressed = false;
-        //size of Han Solo’s Steps
+        //size of Adventure mans  Steps
         int stepSize = 20;
+
+        Image Gold = Properties.Resources.Gold;
+        //initial location of my hero (Han Solo)
+        Rectangle Goldc = new Rectangle(150, 0, 100, 40);
+        //make booleans for movement
+        
+       
+
+
+
+
+
+
 
         public Form1()
         {
@@ -54,6 +67,7 @@ namespace Final_Project
             g.DrawLine(drawPen, 250, 100,250, 200);
             g.DrawLine(drawPen,150, 100,150,350);
             g.DrawImage(adventureguys, hero);
+            g.DrawImage(Gold, Goldc);
 
 
 
